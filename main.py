@@ -35,8 +35,8 @@ def apply(ops: List[Tuple[str, bool, str]], data: str) -> Tuple[str, bool]:
 def interpret(code: str,
               data: str,
               *,
-              limit: Optional[int] = None,
-              wait: float = 0.05) -> str:
+              limit: Optional[int] = 9999,
+              wait: float = 0.0) -> str:
     ops = parse(code)
     print(f'ops = {ops}', file=sys.stderr)
     for step in itertools.count():
