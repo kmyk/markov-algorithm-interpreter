@@ -1,5 +1,7 @@
 import unittest
+
 from main import interpret, parse
+
 
 class Test(unittest.TestCase):
     def test_increment_7(self):
