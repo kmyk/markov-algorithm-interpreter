@@ -17,7 +17,7 @@ jobs:
 
     - name: Run tests
       run: |
-        # pylint --rcfile=setup.cfg main.py tests setup.py
-        isort --check-only --diff --recursive main.py tests setup.py
-        yapf --diff --recursive main.onlinejudge_api tests setup.py | tee yapf.patch && test ! -s yapf.patch
-        mypy main.py tests setup.py
+        # pylint --rcfile=setup.cfg markov_algorithm.py tests setup.py
+        isort --check-only --diff --recursive markov_algorithm.py tests setup.py
+        yapf --diff --recursive markov_algorithm.onlinejudge_api tests setup.py | tee yapf.patch && test ! -s yapf.patch
+        mypy markov_algorithm.py tests setup.py
