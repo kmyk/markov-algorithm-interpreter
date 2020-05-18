@@ -1,6 +1,6 @@
 import unittest
 
-from main import interpret, parse
+from markov_algorithm import interpret, parse
 
 
 class Test(unittest.TestCase):
